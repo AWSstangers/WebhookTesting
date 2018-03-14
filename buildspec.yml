@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - mvn-install
+      - echo 'garbage'
   build:
     commands:
       - export ROOT=`pwd`
