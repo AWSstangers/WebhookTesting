@@ -7,10 +7,6 @@ phases:
   build:
     commands:
       - export ROOT=`pwd`
-      - echo 'Compiling the Ant Code'
-      - cd ant-app && ant compile
-      - echo 'Compiling the Gradle Code'
-      - cd $ROOT/gradle-app && gradle build
       - echo 'Compiling the Maven Code'
       - cd $ROOT
       - mkdir -p ~/.m2/repository && unzip mvn-app/maven-dependencies.zip -d ~/.m2/repository
