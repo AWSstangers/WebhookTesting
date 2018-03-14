@@ -11,3 +11,7 @@ phases:
       - cd $ROOT
       - mkdir -p ~/.m2/repository && unzip mvn-app/maven-dependencies.zip -d ~/.m2/repository
       - cd mvn-app && mvn -o compile
+artifacts:
+  type: zip
+  files:
+  - 'mvn-app/target/**/*'
